@@ -1,0 +1,18 @@
+@mixin fondo-imagen {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boton-hover {
+  background: $color-text-primary;
+  color: $color-background;
+  border-color: $color-text-primary;
+  box-shadow: 0 0 4px 0 $color-text-primary;
+}

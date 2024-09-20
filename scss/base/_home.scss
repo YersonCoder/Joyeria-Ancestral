@@ -1,0 +1,72 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+body {
+  .bg-header {
+    background: $color-background;
+    border: none;
+    padding: 12px 20px;
+
+    nav {
+      .color-menu-button {
+        background: $color-text-primary;
+        color: $color-text-primary;
+        padding: 4px;
+        outline: none;
+        border: none;
+        font-size: 1.8rem;
+
+        &:active {
+          color: $color-background;
+        }
+      }
+
+      a {
+        color: $color-text-primary;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+
+        &:hover {
+          color: $color-text-primary;
+        }
+      }
+
+      div {
+        ul {
+          .nav-item-list {
+            position: relative;
+
+            &:before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background: $color-text-primary;
+              transform: translateY(-50%);
+              transition: 0.3s ease-in-out;
+            }
+
+            &:hover:before {
+              width: 100%;
+            }
+          }
+        }
+
+        .nav-text {
+          color: $color-text-primary;
+        }
+      }
+
+      .border-cart {
+        border: 1px solid $color-text-primary;
+        transition: 0.3s ease;
+
+        &:hover {
+          @include boton-hover;
+        }
+      }
+    }
+  }
+}
