@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  font-family: "Playfair Display", system-ui;
+  font-family: "Red Hat Text", sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -170,9 +171,10 @@ body .bg-header nav .border-cart:hover {
   margin-bottom: 10px;
 }
 .productos-destacados .productos-destacados-container .productos-destacados-card h3 {
-  font-size: 2rem;
-  font-weight: bold;
   color: #ab8f3d;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
   text-transform: uppercase;
   margin: 4px 0;
 }
@@ -255,14 +257,123 @@ body .bg-header nav .border-cart:hover {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  .custom-bg-image h1 {
-    font-size: 4rem;
+main .colecciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  text-transform: uppercase;
+  padding: 100px 20px 40px;
+  margin: 0 auto;
+}
+main .colecciones h1 {
+  color: #ab8f3d;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+main .colecciones-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 20px;
+}
+main .colecciones-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px #ab8f3d;
+}
+main .colecciones-container h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 10px 0;
+}
+main .colecciones-card {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 var(--color--text--primary);
+  padding: 4px;
+  background: #ab8f3d;
+  text-align: center;
+}
+
+@keyframes entrar-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  .custom-bg-image div p {
-    font-size: 1.5rem;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
+.sobre-nosotros--container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero-image.jpg");
+}
+.sobre-nosotros--container h1 {
+  color: #ab8f3d;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+.sobre-nosotros--container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+  gap: 20px;
+  animation: entrar-animation 1s ease-in;
+  border-radius: 8px;
+  background: #ab8f3d;
+  box-shadow: 0 0 7px 0 #ab8f3d;
+}
+.sobre-nosotros--container section .sobre-nosotros-img {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+.sobre-nosotros--container section .sobre-nosotros-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.sobre-nosotros--container section .sobre-nosotros-text {
+  width: 700px;
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+.sobre-nosotros--container section .sobre-nosotros-text p:first-child {
+  margin-bottom: 30px;
+}
+
 footer {
   background: #ab8f3d;
   color: #ffffff;
@@ -338,6 +449,36 @@ footer .social-media ul a i {
 footer .social-media ul a i:hover {
   color: #000000;
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .custom-bg-image h1 {
+    font-size: 4rem;
+  }
+  .custom-bg-image div p {
+    font-size: 1.5rem;
+  }
+  main .colecciones h1 {
+    font-size: 2.4rem;
+  }
+  main .colecciones-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .colecciones-container .colecciones-card {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+  main .colecciones-container h3 {
+    font-size: 1.4rem;
+  }
+  main .productos-destacados h2 {
+    font-size: 2.4rem;
+  }
+  main .productos-destacados .productos-destacados-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

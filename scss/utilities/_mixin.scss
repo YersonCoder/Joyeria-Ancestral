@@ -4,6 +4,13 @@
   background-position: center;
 }
 
+@mixin titulos{
+  color: $color-text-primary;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 @mixin flex {
   display: flex;
   justify-content: center;

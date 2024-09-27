@@ -88,10 +88,7 @@
       }
 
       h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $color-text-primary;
-        text-transform: uppercase;
+        @include titulos;
         margin: 4px 0;
       }
 
@@ -163,7 +160,7 @@
     display: flex;
     gap: 20px;
 
-    a{
+    a {
       @include flex;
       width: 100px;
       height: 100px;
@@ -171,12 +168,11 @@
       background: $color-text-primary;
       box-shadow: 0 0 10px rgb(0, 0, 0) inset;
 
-
       &:first-child {
         background: $color-background;
       }
 
-      i{
+      i {
         font-size: 5rem;
         color: $color-text-secondary;
       }
