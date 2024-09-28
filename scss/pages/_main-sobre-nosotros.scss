@@ -45,9 +45,10 @@
     .sobre-nosotros-text {
       width: 700px;
       font-size: 2rem;
-      font-weight: lighter;
+      font-weight: 400;
       line-height: 2.4rem;
-      color: $color-text-secondary;
+      color: $color-background;
+      font-family: $font-text;
 
 
       p:first-child{

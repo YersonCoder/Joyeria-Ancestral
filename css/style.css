@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  font-family: "Red Hat Text", sans-serif;
+  font-family: "Playfair Display", serif;
   list-style: none;
   text-decoration: none;
 }
@@ -25,6 +26,10 @@ a {
   color: inherit;
 }
 
+body {
+  width: 100%;
+  height: auto;
+}
 body .bg-header {
   background: #000000;
   border: none;
@@ -43,8 +48,8 @@ body .bg-header nav .color-menu-button:active {
 }
 body .bg-header nav a {
   color: #ab8f3d;
-  font-size: 1.4rem;
-  text-transform: capitalize;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
 body .bg-header nav a:hover {
   color: #ab8f3d;
@@ -68,6 +73,7 @@ body .bg-header nav div ul .nav-item-list:hover:before {
 }
 body .bg-header nav div .nav-text {
   color: #ab8f3d;
+  font-family: "Red Hat Display", sans-serif;
 }
 body .bg-header nav .border-cart {
   border: 1px solid #ab8f3d;
@@ -80,7 +86,7 @@ body .bg-header nav .border-cart:hover {
   box-shadow: 0 0 4px 0 #ab8f3d;
 }
 
-.custom-bg-image {
+main section .custom-bg-image {
   background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,13 +99,13 @@ body .bg-header nav .border-cart:hover {
   flex-direction: column;
   padding: 0 20px;
 }
-.custom-bg-image h1 {
+main section .custom-bg-image h1 {
   text-shadow: 0 0 10px rgb(0, 0, 0);
   color: #ab8f3d;
   font-size: 6rem;
   margin-bottom: 40px;
 }
-.custom-bg-image div p {
+main section .custom-bg-image div p {
   display: flex;
   max-width: 900px;
   margin: 0 auto;
@@ -107,7 +113,7 @@ body .bg-header nav .border-cart:hover {
   font-size: 2rem;
   margin-bottom: 40px;
 }
-.custom-bg-image div a {
+main section .custom-bg-image div a {
   margin-top: 20px;
   padding: 10px 24px;
   background: transparent;
@@ -118,7 +124,7 @@ body .bg-header nav .border-cart:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
-.custom-bg-image div a:hover {
+main section .custom-bg-image div a:hover {
   background: #ab8f3d;
   color: #000000;
   border-color: #ab8f3d;
@@ -171,16 +177,14 @@ body .bg-header nav .border-cart:hover {
   margin-bottom: 10px;
 }
 .productos-destacados .productos-destacados-container .productos-destacados-card h3 {
+  font-size: 2.4rem;
   color: #ab8f3d;
-  font-size: 3rem;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 4px 0;
+  font-family: "Red Hat Display", sans-serif;
 }
 .productos-destacados .productos-destacados-container .productos-destacados-card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: lighter;
+  font-family: "Red Hat Display", sans-serif;
   color: #ffffff;
   margin-bottom: 4px;
 }
@@ -188,19 +192,18 @@ body .bg-header nav .border-cart:hover {
   width: 100%;
   height: 40px;
   font-size: 1.6rem;
-  font-weight: bold;
-  border: 1px solid #ab8f3d;
+  font-weight: 600;
+  border: none;
   outline: none;
+  background: #ab8f3d;
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  margin-top: 8px;
-  background: #ab8f3d;
 }
 .productos-destacados .productos-destacados-container .productos-destacados-card button:hover {
   background: #ffffff;
   color: #000000;
-  border: 1px solid #ab8f3d;
 }
 
 .pagos-envios {
@@ -269,7 +272,7 @@ main .colecciones {
 }
 main .colecciones h1 {
   color: #ab8f3d;
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -318,6 +321,15 @@ main .colecciones-card {
     opacity: 1;
   }
 }
+@keyframes entrar-slide-rigth {
+  0% {
+    opacity: 20%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .sobre-nosotros--container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -328,7 +340,7 @@ main .colecciones-card {
 }
 .sobre-nosotros--container h1 {
   color: #ab8f3d;
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -366,12 +378,212 @@ main .colecciones-card {
 .sobre-nosotros--container section .sobre-nosotros-text {
   width: 700px;
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 2.4rem;
-  color: #ffffff;
+  color: #000000;
+  font-family: "Red Hat Display", sans-serif;
 }
 .sobre-nosotros--container section .sobre-nosotros-text p:first-child {
   margin-bottom: 30px;
+}
+
+@keyframes entrar-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes entrar-slide-rigth {
+  0% {
+    opacity: 20%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main .productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 100px 20px 40px;
+}
+main .productos h1 {
+  color: #ab8f3d;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+main .productos-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+main .productos-container .producto-card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 7px 0 #000000;
+  padding: 8px;
+  text-align: start;
+  animation: entrar-animation 1s ease-in;
+  background: #000000;
+  border: 1px solid #ab8f3d;
+  box-shadow: 0 0 7px 0 #ab8f3d;
+}
+main .productos-container .producto-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+main .productos-container .producto-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ab8f3d;
+}
+main .productos-container .producto-card p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-family: "Red Hat Display", sans-serif;
+}
+main .productos-container .producto-card button {
+  width: 100%;
+  height: 40px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: #ab8f3d;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main .productos-container .producto-card button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+@keyframes entrar-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes entrar-slide-rigth {
+  0% {
+    opacity: 20%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main {
+  height: auto;
+}
+main .contacto {
+  width: 100%;
+  padding: 100px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .contacto h1 {
+  color: #ab8f3d;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .contacto p {
+  font-size: 1.8rem;
+  color: #ab8f3d;
+}
+main .contacto form {
+  width: 100%;
+  max-width: 600px;
+}
+main .contacto form fieldset {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ab8f3d;
+  border-radius: 8px;
+  box-shadow: 0 0 7px 0 #ab8f3d;
+  margin-top: 24px;
+}
+main .contacto form fieldset label {
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .contacto form fieldset input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ab8f3d;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+main .contacto form fieldset textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px 0;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 1px solid #ab8f3d;
+  padding-left: 10px;
+  color: #ffffff;
+}
+main .contacto form fieldset button {
+  width: 100%;
+  height: 40px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: #ab8f3d;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+}
+main .contacto form fieldset button:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 footer {
@@ -478,6 +690,16 @@ footer .social-media ul a i:hover {
   main .productos-destacados .productos-destacados-container {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 10px;
+  }
+  main .productos-destacados .productos-destacados-container .productos-destacados-card h3 {
+    font-size: 2rem;
+  }
+  main .productos-destacados .productos-destacados-container .productos-destacados-card p {
+    font-size: 1.2rem;
+  }
+  main .productos-destacados .productos-destacados-container .productos-destacados-card button {
+    height: 30px;
+    font-size: 1.2rem;
   }
 }
 

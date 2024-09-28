@@ -2,6 +2,8 @@
 @import "../utilities/mixin";
 
 body {
+    width: 100%;
+    height: auto;
   .bg-header {
     background: $color-background;
     border: none;
@@ -23,8 +25,8 @@ body {
 
       a {
         color: $color-text-primary;
-        font-size: 1.4rem;
-        text-transform: capitalize;
+        font-size: 2.4rem;
+        text-transform: uppercase;
 
         &:hover {
           color: $color-text-primary;
@@ -56,6 +58,8 @@ body {
 
         .nav-text {
           color: $color-text-primary;
+          font-family: $font-text;
+          
         }
       }
 

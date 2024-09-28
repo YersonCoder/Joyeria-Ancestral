@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-
-
-    
   .custom-bg-image {
     h1 {
       font-size: 4rem;
@@ -24,7 +21,7 @@
       display: flex;
       flex-wrap: wrap;
 
-      .colecciones-card{
+      .colecciones-card {
         width: 260px;
         margin-bottom: 20px;
       }
@@ -41,7 +38,23 @@
       .productos-destacados-container {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 10px;
+
+        .productos-destacados-card{
+            h3{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+            }
+
+            button{
+                height: 30px;
+                font-size: 1.2rem;
+            }
+        }
       }
     }
   }
 }
+
