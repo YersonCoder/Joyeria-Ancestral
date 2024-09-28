@@ -1,0 +1,59 @@
+@import "../utilities/_variables";
+@import "../utilities/_mixin";
+@import "../utilities/_animation";
+
+.sobre-nosotros--container {
+  @include fondo-imagen;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/hero-image.jpg");
+
+  h1 {
+    @include titulos;
+    padding-top: 60px;
+  }
+
+  section {
+    @include flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 20px;
+    gap: 20px;
+    animation: entrar-animation 1s ease-in;
+    border-radius: 8px;
+    background: $color-text-primary;
+    box-shadow: 0 0 7px 0 $color-text-primary;
+
+
+    .sobre-nosotros-img {
+      width: 400px;
+      overflow: hidden;
+      border-radius: 8px;
+      position: relative;
+
+      img {
+        @include image-size;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .sobre-nosotros-text {
+      width: 700px;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: $color-background;
+      font-family: $font-text;
+
+
+      p:first-child{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

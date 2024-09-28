@@ -1,0 +1,65 @@
+@import "../utilities/_variables";
+@import "../utilities/_mixin";
+@import "../components/_buttons";
+@import "../utilities/_animation";
+
+main {
+  .productos {
+    @include flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 100px 20px 40px;
+
+    h1 {
+      @include titulos;
+      margin-bottom: 40px;
+    }
+  }
+
+  .productos-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    .producto-card {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 7px 0 $color-background;
+      padding: 8px;
+      text-align: start;
+      animation: entrar-animation 1s ease-in;
+      background: $color-background;
+      border: 1px solid $color-text-primary;
+      box-shadow: 0 0 7px 0 $color-text-primary;
+
+      img {
+        @include image-size;
+        border-radius: 8px;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-text-primary;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-text-secondary;
+        margin-bottom: 8px;
+        font-family: $font-text;
+      }
+
+      button {
+        @include buttons-primary;
+      }
+    }
+  }
+}
