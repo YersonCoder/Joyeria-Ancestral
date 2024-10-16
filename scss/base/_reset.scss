@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+::selection{
+    background:blue;
+    color: $color-background;
+}
+
 body {
   font-family: $font-base;
   list-style: none;
