@@ -12,7 +12,7 @@ main {
 
     h1 {
       @include titulos;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 
@@ -24,6 +24,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
     
 
     img {
@@ -47,5 +48,6 @@ main {
     padding: 4px;
     background: $color-text-primary;
     text-align: center;
+    
   }
 }

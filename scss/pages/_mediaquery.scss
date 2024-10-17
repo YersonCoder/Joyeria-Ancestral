@@ -13,13 +13,14 @@
 
   main {
     .custom-bg-image {
-      div {
+        .text-center {
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
+    
         }
 
         p {
-          font-size: 1rem;
+          font-size: 1.4rem;
         }
       }
     }
